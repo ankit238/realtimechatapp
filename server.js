@@ -74,37 +74,3 @@ const PORT = process.env.PORT || 3000;
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-
-// const path = require("path");
-// const express=require("express");
-// const socketio=require("socket.io");
-// const http=require("http");
-// const { static } = require("express");
-// const formatMessage = require("./utils/messages");
-
-// const app= express();
-
-// const server=http.createServer("app");
-// const io=socketio(server);
-
-// app.use(express.static(path.join(__dirname,"public")));
-// const botName='aao chat kare 😄'
-
-// io.on('connection',socket=>{
-//     socket.on('joinroom',({username,room,password}) =>
-//     {
-//         const user=userJoin(socket.id,username,room,password);
-
-//         socket.join(user.room);
-
-//         socket.emit('message',formatMessage(botname,"welcome ji welcome"));
-
-//         socket.broadcast.to(user.room)
-//         .emit("message",formatMessage(botName,`${user.username} has joined the chat`));
-
-        
-
-
-
-//     }
-// })
